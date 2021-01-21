@@ -1,0 +1,6 @@
+.profile__description {
+grid-area: description;
+font-size: 18px;
+margin: 0;
+align-self: start;
+}

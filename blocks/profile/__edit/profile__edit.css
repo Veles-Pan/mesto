@@ -1,0 +1,11 @@
+.profile__edit {
+    grid-area: edit;
+    padding: 7px;
+    margin-bottom: 9px;
+    align-self: end;
+    border: 1px solid #FFFFFF;
+}
+
+/* Rectangle */
+
+
