@@ -21,5 +21,13 @@
 @import url("../blocks/card/__photo/card__photo.css");
 @import url("../blocks/card/__title/card__title.css");
 
+@import url("../blocks/edit-profile/edit-profile.css");
+@import url("../blocks/edit-profile/__container/edit-profile__container.css");
+@import url("../blocks/edit-profile/__button/edit-profile__button.css");
+@import url("../blocks/edit-profile/__close/edit-profile__close.css");
+@import url("../blocks/edit-profile/__description/edit-profile__description.css");
+@import url("../blocks/edit-profile/__name/edit-profile__name.css");
+@import url("../blocks/edit-profile/__title/edit-profile__title.css");
+
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__copyright/footer__copyright.css");

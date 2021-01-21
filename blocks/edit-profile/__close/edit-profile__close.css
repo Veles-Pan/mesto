@@ -1,0 +1,10 @@
+.edit-profile__close {
+    position: absolute;
+    right:  -50px;
+    top: -50px;
+}
+
+.edit-profile__close:hover {
+    cursor: pointer;
+    opacity: .6;
+}
