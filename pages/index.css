@@ -12,5 +12,11 @@
 @import url("../blocks/profile/__information/profile__information.css");
 @import url("../blocks/profile/__name/profile__name.css");
 
+@import url("../blocks/grid-area/grid-area.css");
+
+@import url("../blocks/card/card.css");
+@import url("../blocks/card/__like/card__like.css");
+@import url("../blocks/card/__photo/card__photo.css");
+@import url("../blocks/card/__title/card__title.css");
 
 
