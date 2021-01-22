@@ -9,3 +9,9 @@
     font-family: inherit;
     outline-style: none;
 }
+
+@media screen and (max-width: 492px) {
+    .edit-profile__description {
+        width: 84.3%;
+    }
+}

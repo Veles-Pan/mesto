@@ -2,3 +2,10 @@
     width: 68.75vw;
     margin: 0 auto 60px;
 }
+
+@media screen and (max-width: 400px) {
+    .footer {
+        width: 88.12vw;
+        margin: 0 auto 36px;
+    }
+}

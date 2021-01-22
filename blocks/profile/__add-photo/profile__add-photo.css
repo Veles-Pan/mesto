@@ -8,3 +8,17 @@
     opacity: 0.6;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1000px) {
+    .profile__add-photo {
+        padding: 10px 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profile__add-photo {
+        max-width: 16px;
+        padding: 17px 134px;
+        margin-top: 36px;
+    }
+}

@@ -10,3 +10,17 @@
     opacity: 0.6;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1000px) {
+    .profile__edit {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile__edit {
+        padding: 5.25px;
+        width: 7.5px;
+        margin-bottom: 4px;
+    }
+}

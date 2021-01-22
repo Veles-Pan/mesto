@@ -5,3 +5,12 @@
     "avatar description description";
     gap: 10px 18px;
 }
+
+@media screen and (max-width: 800px) {
+    .profile__information {
+        grid-template-areas: 
+        "avatar avatar"
+        "name edit"
+        "description description";
+    }
+}

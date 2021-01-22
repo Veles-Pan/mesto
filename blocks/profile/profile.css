@@ -7,3 +7,11 @@
     margin: 0 auto 50px;
     color: #ffffff;
 }
+
+@media screen and (max-width: 800px) {
+    .profile {
+        flex-direction: column;
+        width: 88.12vw;
+        margin: 0 auto 36px;
+    }
+}

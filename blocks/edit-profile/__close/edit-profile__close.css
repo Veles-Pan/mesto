@@ -1,10 +1,18 @@
 .edit-profile__close {
     position: absolute;
-    right:  -50px;
+    right: -50px;
     top: -50px;
 }
 
 .edit-profile__close:hover {
     cursor: pointer;
     opacity: .6;
+}
+
+@media screen and (max-width: 559px) {
+    .edit-profile__close {
+        width: 35px;
+        top: -40px;
+        right: 0;
+    }
 }

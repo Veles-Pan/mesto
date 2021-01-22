@@ -2,4 +2,14 @@
     font-size: 24px;
     font-weight: 900;
     margin: 34px 36px 41px;
+    text-align: center;
+    align-self: start;
+}
+
+@media screen and (max-width: 492px) {
+    .edit-profile__title {
+        font-size: 18px;
+        align-self: center;
+        margin: 25px 7.8% 62px;
+    }
 }

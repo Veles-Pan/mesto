@@ -16,3 +16,10 @@
     cursor: pointer;
     opacity: .6;
 }
+
+@media screen and (max-width: 492px) {
+    .edit-profile__button {
+        width: 84.3%;
+        font-size: 14px;
+    }
+}
