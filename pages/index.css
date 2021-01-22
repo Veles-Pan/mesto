@@ -21,7 +21,6 @@
 @import url("../blocks/card/__photo/card__photo.css");
 @import url("../blocks/card/__title/card__title.css");
 
-@import url("../blocks/edit-profile/_active/edit-profile_active.css");
 @import url("../blocks/edit-profile/edit-profile.css");
 @import url("../blocks/edit-profile/__container/edit-profile__container.css");
 @import url("../blocks/edit-profile/__button/edit-profile__button.css");
