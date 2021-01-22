@@ -1,5 +1,5 @@
 .profile__add-photo {
-    padding: 14px 64px;
+    padding: 12px 62px;
     border: 2px solid #FFFFFF;
     border-radius: 2px;
 }
@@ -15,10 +15,10 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
     .profile__add-photo {
         max-width: 16px;
-        padding: 17px 134px;
+        padding: 15px 131px;
         margin-top: 36px;
     }
 }

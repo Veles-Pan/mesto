@@ -8,7 +8,7 @@
     color: #ffffff;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
     .profile {
         flex-direction: column;
         width: 88.12vw;

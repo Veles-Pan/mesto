@@ -3,6 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(282px, 282px));
     gap: 20px 17px;
     width: 68.75vw;
+    max-width: 1100px;
     margin: 0 auto 67px;
     justify-content: center;
     align-items: center;
