@@ -1,5 +1,6 @@
 .footer {
     width: 68.75vw;
+    max-width: 880px;
     margin: 0 auto 60px;
 }
 

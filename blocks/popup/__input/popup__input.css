@@ -1,17 +1,25 @@
-.edit-profile__description {
+.popup__input {
     width: 358px;
     margin-bottom: 30px;
     border: 0;
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(0, 0, 0, .6);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
     font-size: 14px;
     padding-bottom: 13px;
     font-family: inherit;
     outline-style: none;
 }
 
+.popup__input:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, .7);
+}
+
+.popup__input:last-of-type {
+    margin-bottom: 49px;
+}
+
 @media screen and (max-width: 492px) {
-    .edit-profile__description {
+    .popup__input {
         width: 84.3%;
     }
 }

@@ -5,6 +5,7 @@
     grid-template-areas: 
     "photo photo"
     "title like";
+    grid-template-columns: auto 45px;
     gap: 25px 32px;
     justify-content: space-between;
     align-items: center;

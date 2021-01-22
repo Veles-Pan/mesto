@@ -11,68 +11,68 @@
 
         <header class="header">
             <img class="header__logo" alt="логотип" src="./images/Logo.svg">
-            <div class="header__line"></div>
         </header>
 
         <main class="content">
 
             <section class="profile">
                 <div class="profile__information">
-                    <img class="profile__avatar" alt="аватар" src="./images/Avatar.jpg">
-                    <p class="profile__name">Жак-Ив Кусто</p>
-                    <img class="profile__edit" alt="карандаш" src="./images/pen.svg">
+                    <img class="profile__avatar" alt="" src="./images/Avatar.jpg">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button type="button" class="profile__button" name="edit-button"></button>
                     <p class="profile__description">Исследователь океана</p>
                 </div>
-                <img class="profile__add-photo" alt="плюс" src="./images/plus.svg">
-            </section>
-
-            <section class="edit-profile">
-                <div class="edit-profile__container">
-                    <h2 class="edit-profile__title">Редактировать профиль</h2>
-                    <input type="text" class="edit-profile__name">
-                    <input type="text" class="edit-profile__description">
-                    <button class="edit-profile__button">Сохранить</button>
-                    <img class="edit-profile__close" alt="крестик" src="./images/Close Icon.svg">
-                </div>
+                
+                <button type="button" class="profile__add-photo" name="add-button"></button>
             </section>
 
             <section class="grid-area">
                 <article class="card">
-                    <img class="card__photo" alt="карачевск" src="./images/kirill-pershin-foto1.jpg">
-                    <h3 class="card__title">Карачаевск</h3>
-                    <img class="card__like" alt="лайк" src="./images/like.svg">
+                    <img class="card__photo" alt="Карачаевск" src="./images/kirill-pershin-foto1.jpg">
+                    <h2 class="card__title">Карачаев</h2>
+                    <button class="card__like" name="like-button" type="button"></button>
                 </article>
 
                 <article class="card">
-                    <img class="card__photo" alt="эльбрус" src="./images/kirill-pershin-foto2.jpg">
-                    <h3 class="card__title">Гора Эльбрус</h3>
-                    <img class="card__like" alt="лайк" src="./images/like.svg">
+                    <img class="card__photo" alt="Эльбрус" src="./images/kirill-pershin-foto2.jpg">
+                    <h2 class="card__title">Гора Эльбрус</h2>
+                    <button class="card__like" name="like-button" type="button"></button>
                 </article>
 
                 <article class="card">
-                    <img class="card__photo" alt="домбай" src="./images/kirill-pershin-foto3.jpg">
-                    <h3 class="card__title">Домбай</h3>
-                    <img class="card__like" alt="лайк" src="./images/like.svg">
+                    <img class="card__photo" alt="Домбай" src="./images/kirill-pershin-foto3.jpg">
+                    <h2 class="card__title">Домбай</h2>
+                    <button class="card__like" name="like-button" type="button"></button>
                 </article>
 
                 <article class="card">
-                    <img class="card__photo" alt="домбай" src="./images/kirill-pershin-foto4.jpg">
-                    <h3 class="card__title">Домбай</h3>
-                    <img class="card__like" alt="лайк" src="./images/like.svg">
+                    <img class="card__photo" alt="Домбай" src="./images/kirill-pershin-foto4.jpg">
+                    <h2 class="card__title">Домбай</h2>
+                    <button class="card__like" name="like-button" type="button"></button>
                 </article>
 
                 <article class="card">
-                    <img class="card__photo" alt="эльбрус" src="./images/kirill-pershin-foto5.jpg">
-                    <h3 class="card__title">Гора Эльбрус</h3>
-                    <img class="card__like" alt="лайк" src="./images/like.svg">
+                    <img class="card__photo" alt="Эльбрус" src="./images/kirill-pershin-foto5.jpg">
+                    <h2 class="card__title">Гора Эльбрус</h2>
+                    <button class="card__like" name="like-button" type="button"></button>
                 </article>
 
                 <article class="card">
-                    <img class="card__photo" alt="черкесск" src="./images/kirill-pershin-foto6.jpg">
-                    <h3 class="card__title">Карачаево-Черкесск</h3>
-                    <img class="card__like" alt="лайк" src="./images/like.svg">
+                    <img class="card__photo" alt="Карачаевск" src="./images/kirill-pershin-foto6.jpg">
+                    <h2 class="card__title">Карачаево-Черкесск</h2>
+                    <button class="card__like" name="like-button" type="button"></button>
                 </article>
             </section>
+
+            <div class="popup">
+                <form class="popup__container">
+                    <h2 class="popup__title">Редактировать профиль</h2>
+                    <input type="text" class="popup__input popup__name" name="popup-name">
+                    <input type="text" class="popup__input popup__description" name="popup-description">
+                    <button type="submit" name="submit-button" class="popup__button">Сохранить</button>
+                    <button type="button" name="close-button" class="popup__close"></button>
+                </form>
+            </div>
 
         </main>
 
@@ -80,7 +80,7 @@
             <p class="footer__copyright">&copy;&nbsp;2020 Mesto Russia</p>
         </footer>
 
-        <script src="./index.js"></script>
+        <script src="./js/scripts.js"></script>
 
 
     </body>
