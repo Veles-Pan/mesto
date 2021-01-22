@@ -5,7 +5,7 @@
     "avatar description description";
     gap: 10px 18px;
 
-    grid-template-columns: auto 320px auto;
+    grid-template-columns: auto 294px auto;
 }
 
 @media screen and (max-width: 1000px) {

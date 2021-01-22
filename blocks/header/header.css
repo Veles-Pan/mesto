@@ -1,6 +1,8 @@
 .header {
     width: 68.75vw;
+    max-width: 880px;
     margin: 45px auto 45px;
+    border-bottom: 1px solid #545454;
 }
 
 @media screen and (max-width: 400px) {
