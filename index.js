@@ -36,4 +36,4 @@ function editInformation () {
     editPopup.classList.remove('edit-profile_active');
 }
 
-saveButton.addEventListener('click', editInformation)
+saveButton.addEventListener('click', editInformation);
