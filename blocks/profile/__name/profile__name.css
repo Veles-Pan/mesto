@@ -5,4 +5,8 @@
     font-weight: 500;
     margin: 0;
     align-self: end;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
