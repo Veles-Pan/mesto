@@ -9,10 +9,8 @@ let editPopup = document.querySelector('.popup');
 let profileName = document.querySelector('.profile__name');
 let profileDescription = document.querySelector('.profile__description');
 
-let newProfileName = document.querySelector('.popup__name');
-let newProfileDescription = document.querySelector('.popup__description');
-
-let saveButton = document.querySelector('.popup__button');
+let newProfileName = document.querySelector('.popup__input_type_name');
+let newProfileDescription = document.querySelector('.popup__input_type_description');
 
 function showPopup() {
     newProfileName.value = profileName.textContent;
@@ -27,7 +25,7 @@ function hidePopup() {
 function editInformation (evt) {
     profileName.textContent = newProfileName.value;
     profileDescription.textContent = newProfileDescription.value;
-    editPopup.classList.remove('popup_active');
+    hidePopup();
     evt.preventDefault();
 }
 
