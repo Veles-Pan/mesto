@@ -55,6 +55,7 @@ function addCard (name, link) {
     const cardElement = templateCard.querySelector('.card').cloneNode(true);
 
     cardElement.querySelector('.card__photo').src = link;
+    cardElement.querySelector('.card__photo').alt = name;
     cardElement.querySelector('.card__title').textContent = name;
 
     cardElement.querySelector('.card__like').addEventListener('click', function (evt) {
@@ -118,11 +119,15 @@ function editInformation (evt) {
 }
 
 function createCard (event) {
-    addCard (cardTitle.value, cardLink.value);
-
-    closeAddForm();
-
-    event.preventDefault();
+    if (cardTitle.value !== '' && cardLink.value !== '') {
+        addCard (cardTitle.value, cardLink.value);
+        closeAddForm();
+        event.preventDefault();
+    } 
+    else {
+        closeAddForm();
+    }
+    
 }
 
 initialCards.forEach (function (item) {
