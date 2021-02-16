@@ -1,0 +1,9 @@
+.opacity-change {
+    animation: popup-opacity-change .4s ease-in-out;
+
+}
+
+@keyframes popup-opacity-change {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}

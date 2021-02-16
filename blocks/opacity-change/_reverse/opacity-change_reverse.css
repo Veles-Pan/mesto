@@ -1,0 +1,8 @@
+.opacity-change_reverse {
+    animation: popup-opacity-change-reverse .4s ease-in-out;
+}
+
+@keyframes popup-opacity-change-reverse {
+    from { opacity: 1;}
+    to { opacity: 0;}
+}
