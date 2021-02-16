@@ -1,18 +1,18 @@
-let openNameEditor = document.querySelector('.profile__button');
+const openNameEditor = document.querySelector('.profile__button');
 
-let openCardEditor = document.querySelector('.profile__add-photo');
+const openCardEditor = document.querySelector('.profile__add-photo');
 
-let closeCardEditor = document.querySelector('.popup__close_add');
+const closeCardEditor = document.querySelector('.popup__close_add');
 
-let form = document.querySelector('.popup__container_rename');
+const formEdit = document.querySelector('.popup__container_rename');
 
-let addForm = document.querySelector('.popup__container_add');
+const addForm = document.querySelector('.popup__container_add');
 
-let closeNameEditor = document.querySelector('.popup__close_rename');
+const closeNameEditor = document.querySelector('.popup__close_rename');
 
-let renamePopup = document.querySelector('.popup_rename');
+const renamePopup = document.querySelector('.popup_rename');
 
-let addPopup = document.querySelector('.popup_add');
+const addPopup = document.querySelector('.popup_add');
 
 let profileName = document.querySelector('.profile__name');
 let profileDescription = document.querySelector('.profile__description');
@@ -138,7 +138,7 @@ openNameEditor.addEventListener('click', showPopup);
 
 closeNameEditor.addEventListener('click', hidePopup); 
 
-form.addEventListener('submit', editInformation);
+formEdit.addEventListener('submit', editInformation);
 
 openCardEditor.addEventListener('click', showAddForm);
 
