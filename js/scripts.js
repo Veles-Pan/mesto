@@ -126,6 +126,7 @@ function createCard (event) {
     } 
     else {
         closeAddForm();
+        event.preventDefault();
     }
     
 }
