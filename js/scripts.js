@@ -27,6 +27,7 @@ let cardLink = document.querySelector('.popup__input_type_link');
 const gridArea = document.querySelector('.grid-area');
 
 const templateCard = document.querySelector('.template-card').content;
+const templatePopup = document.querySelector('.template-popup').content;
 
 const initialCards = [
     {
@@ -75,9 +76,7 @@ function createCard (name, link) {
 }
 
 function createPopup (name, link) {
-
-    
-    const popupElement = document.querySelector('.card-popup').cloneNode(true);
+    const popupElement = templatePopup.querySelector('.card-popup').cloneNode(true);
 
     const popupPhoto = popupElement.querySelector('.card-popup__photo');
     popupPhoto.src = link;
@@ -112,8 +111,6 @@ function hidePopup(popupName) {
     addForm.reset();
     popupName.classList.add('popup_closed');
     popupName.classList.remove('popup_active');
-    
-
 }
 
 
