@@ -1,5 +1,7 @@
 .card-popup {
-    display: none;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
     flex-direction: column;
     position: fixed;
     margin: 0;

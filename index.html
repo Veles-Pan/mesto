@@ -35,24 +35,32 @@
             <p class="footer__copyright">&copy;&nbsp;2020 Mesto Russia</p>
         </footer>
 
-        <div class="popup popup_rename opacity-change">
+        <div class="popup popup_rename">
             <form class="popup__container popup__container_rename">
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <input type="text" class="popup__input popup__input_type_name" name="popup-name">
-                <input type="text" class="popup__input popup__input_type_description" name="popup-description">
+                <input type="text" class="popup__input popup__input_type_name" name="popup-name" placeholder="Имя">
+                <input type="text" class="popup__input popup__input_type_description" name="popup-description" placeholder="Описание">
                 <button type="submit" name="submit-button" class="popup__button">Сохранить</button>
                 <button type="button" name="close-button" class="popup__close popup__close_rename"></button>
             </form>
         </div>
 
-        <div class="popup popup_add opacity-change">
+        <div class="popup popup_add">
             <form class="popup__container popup__container_add">
                 <h2 class="popup__title">Новое место</h2>
-                <input type="text" class="popup__input popup__input_type_title" name="popup-title" placeholder="Навание">
-                <input type="text" class="popup__input popup__input_type_link" name="popup-link" placeholder="Ссылка на картинку">
+                <input type="text" class="popup__input popup__input_type_title" name="popup-title" placeholder="Навание" required>
+                <input type="url" class="popup__input popup__input_type_link" name="popup-link" placeholder="Ссылка на картинку" required>
                 <button type="submit" name="submit-button" class="popup__button">Создать</button>
                 <button type="button" name="close-button" class="popup__close popup__close_add"></button>
             </form>
+        </div>
+
+        <div class="card-popup">
+            <div class="card-popup__area">
+                <img class="card-popup__photo">
+                <p class="card-popup__title"></p>
+                <button type="button" name="close-button" class="card-popup__close"></button>
+            </div>
         </div>
 
         <template class="template-card">
@@ -62,13 +70,6 @@
                 <button class="card__like" name="like-button" type="button"></button>
                 <button class="card__delete" name="delete-button" type="button"></button>
             </article>
-            <div class="card-popup opacity-change">
-                <div class="card-popup__area">
-                    <img class="card-popup__photo">
-                    <p class="card-popup__title"></p>
-                    <button type="button" name="close-button" class="card-popup__close"></button>
-                </div>
-            </div>
           </template> 
 
         <script src="./js/scripts.js"></script>

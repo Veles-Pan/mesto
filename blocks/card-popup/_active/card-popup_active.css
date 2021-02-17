@@ -1,4 +1,10 @@
 .card-popup_active {
-    display: flex;
+    animation: opacity-change .5s linear; 
     opacity: 1;
+    visibility: visible;
+}
+
+@keyframes opacity-change {
+    from { opacity: 0;} 
+    to { opacity: 1;} 
 }
