@@ -1,0 +1,6 @@
+.popup__area {
+    width: auto;
+    position: absolute;
+    max-width: 75vw;
+    max-height: 75vh;
+}
