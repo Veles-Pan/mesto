@@ -28,7 +28,7 @@ const gridArea = document.querySelector('.grid-area');
 
 const templateCard = document.querySelector('.template-card').content;
 
-const pageContent = document.querySelector('.root');
+const pageContent = document.querySelector('.content');
 
 let photoId = 0;
 
