@@ -2,13 +2,9 @@ const openNameEditor = document.querySelector('.profile__button');
 
 const openCardEditor = document.querySelector('.profile__add-photo');
 
-const closeCardEditor = document.querySelector('.popup__close_add');
-
 const formEdit = document.querySelector('.popup__container_rename');
 
 const addForm = document.querySelector('.popup__container_add');
-
-const closeNameEditor = document.querySelector('.popup__close_rename');
 
 const renamePopup = document.querySelector('.popup_rename');
 
@@ -28,7 +24,8 @@ const gridArea = document.querySelector('.grid-area');
 
 const templateCard = document.querySelector('.template-card').content;
 
-const popupButton = document.querySelector('.popup__close_photo');
+
+const popupArea = document.querySelectorAll('.popup');
 
 const initialCards = [
     {
@@ -119,17 +116,13 @@ initialCards.forEach (function (item) {
     addCard(gridArea, createCard(item.name, item.link));
 
 });
-
-popupButton.addEventListener('click', function () {
-    popupClose(popupButton.closest('.popup_photo'))
-})
   
 openNameEditor.addEventListener('click', function () {
     newProfileName.value = profileName.textContent;
     newProfileDescription.value = profileDescription.textContent;
-    popupOpen(renamePopup)}); 
+    popupOpen(renamePopup)
+}); 
 
-closeNameEditor.addEventListener('click', function () {popupClose(renamePopup)}); 
 
 formEdit.addEventListener('submit', editInformation);
 
@@ -137,6 +130,21 @@ openCardEditor.addEventListener('click', function () {
     addForm.reset();
     popupOpen(addPopup)});
 
-closeCardEditor.addEventListener('click', function () {popupClose(addPopup)});
 
 addForm.addEventListener('submit', createNewCard);
+
+
+
+popupArea.forEach((popup) => {
+    popup.addEventListener('click', function (evt) {
+        if (!evt.target.classList.contains('popup_opened')) {
+            popupClose(popup);
+        }
+    });
+
+    document.addEventListener('keyup', function (evt) {
+        if (evt.keyCode === 27) {
+            popupClose(popup);
+        }
+    })
+})

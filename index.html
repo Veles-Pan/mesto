@@ -36,29 +36,41 @@
         </footer>
 
         <div class="popup popup_rename">
-            <form class="popup__container popup__container_rename">
-                <h2 class="popup__title">Редактировать профиль</h2>
-                <input type="text" class="popup__input popup__input_type_name" name="popup-name" placeholder="Имя">
-                <input type="text" class="popup__input popup__input_type_description" name="popup-description" placeholder="Описание">
-                <button type="submit" name="submit-button" class="popup__button">Сохранить</button>
+            <form class="popup__container popup__container_rename popup_opened" novalidate>
+                <h2 class="popup__title popup_opened">Редактировать профиль</h2>
+                <label class="popup__field popup_opened">
+                    <input type="text" class="popup__input popup__input_type_name popup_opened" name="popup-name" minlength="2" maxlength="40" required placeholder="Имя">
+                    <span class="popup__error popup__error_name popup_opened">Текст должен быть не короче 2 симв.</span>
+                </label>
+                <label class="popup__field popup_opened">
+                    <input type="text" class="popup__input popup__input_type_description popup_opened" name="popup-description" minlength="2" maxlength="200" required placeholder="Описание">
+                    <span class="popup__error popup__error_description popup_opened">Текст должен быть не короче 2 симв.</span>
+                </label>
+                <button type="submit" name="submit-button" class="popup__button popup_opened">Сохранить</button>
                 <button type="button" name="close-button" class="popup__close popup__close_rename"></button>
             </form>
         </div>
 
         <div class="popup popup_add">
-            <form class="popup__container popup__container_add">
-                <h2 class="popup__title">Новое место</h2>
-                <input type="text" class="popup__input popup__input_type_title" name="popup-title" placeholder="Навание" required>
-                <input type="url" class="popup__input popup__input_type_link" name="popup-link" placeholder="Ссылка на картинку" required>
-                <button type="submit" name="submit-button" class="popup__button">Создать</button>
+            <form class="popup__container popup__container_add popup_opened" novalidate>
+                <h2 class="popup__title popup_opened">Новое место</h2>
+                <label class="popup__field  popup_opened">
+                    <input type="text" class="popup__input popup__input_type_title  popup_opened" name="popup-title" minlength="2" maxlength="30" placeholder="Навание" required>
+                    <span class="popup__error popup__error_title  popup_opened">Вы пропустили это поле.</span>
+                </label>
+                <label class="popup__field  popup_opened">
+                    <input type="url" class="popup__input popup__input_type_link  popup_opened" name="popup-link" placeholder="Ссылка на картинку" required>
+                    <span class="popup__error popup__error_link  popup_opened" >Введите адрес сайта.</span>
+                </label>
+                <button type="submit" name="submit-button  popup_opened" class="popup__button">Создать</button>
                 <button type="button" name="close-button" class="popup__close popup__close_add"></button>
             </form>
         </div>
 
         <div class="popup popup_photo">
-            <div class="popup__area">
-                <img class="popup__photo" alt="навание" src="https://i.imgur.com/TUuAU0c.jpg">
-                <p class="popup__photo-title"></p>
+            <div class="popup__area popup_opened">
+                <img class="popup__photo popup_opened" alt="навание" src="https://i.imgur.com/TUuAU0c.jpg">
+                <p class="popup__photo-title popup_opened"></p>
                 <button class="popup__close popup__close_photo"></button>
             </div>
         </div>
@@ -73,6 +85,7 @@
           </template> 
 
         <script src="./js/scripts.js"></script>
+        <script src="./js/validation.js"></script>
 
 
     </body>
