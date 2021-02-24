@@ -137,7 +137,7 @@ addForm.addEventListener('submit', createNewCard);
 
 popupArea.forEach((popup) => {
     popup.addEventListener('click', function (evt) {
-        if (!evt.target.classList.contains('popup_opened')) {
+        if (evt.target.parentNode.classList[0] === 'root' || evt.target.classList.contains('popup__close')) {
             popupClose(popup);
         }
     });

@@ -9,8 +9,6 @@ const validationElements = {
 }
 
 function enableValidation(validationElements) {
-
-    console.log (validationElements)
     const formList = Array.from(document.querySelectorAll(validationElements.formSelector));
 
     formList.forEach((formElement) => {
