@@ -141,8 +141,7 @@ formEdit.addEventListener('submit', editInformation);
 
 openCardEditor.addEventListener('click', function () {
     addForm.reset();
-    subminButton.classList.add('popup__button_disabled');
-    subminButton.setAttribute('disabled', true);
+    disableButtonState(subminButton, validationElements.inactiveButtonClass)
     openPopup(addPopup)});
 
 

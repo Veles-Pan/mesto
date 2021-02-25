@@ -65,25 +65,19 @@ function enableButtonState (buttonElement, inactiveButtonClass) {
     buttonElement.removeAttribute('disabled');
 }
 
-function checkButtonState (inputElement, buttonElement, inactiveButtonClass) {
-    let toggleElement = false;
-
-    inputElement.forEach((input) => {
-        if(!hasInvalidInput(input)) {
-            toggleElement = true;
-        }
-    })
-
-    if(!toggleElement) {
-        enableButtonState(buttonElement, inactiveButtonClass)
+function checkButtonState (inputList, buttonElement, inactiveButtonClass) {
+    if(hasInvalidInput(inputList)) {
+        disableButtonState(buttonElement, inactiveButtonClass);
     } 
     else {
-        disableButtonState(buttonElement, inactiveButtonClass)
+        enableButtonState(buttonElement, inactiveButtonClass);
     }
-}
+} 
 
-function hasInvalidInput (inputElement) {
-    if (inputElement.validity !== undefined) {
-    return inputElement.validity.valid;
-    }
-}
+function hasInvalidInput(inputList){ 
+    return inputList.some((inputElement) => { 
+      return !inputElement.validity.valid; 
+    }); 
+  } 
+
+
