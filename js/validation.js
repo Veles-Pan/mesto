@@ -21,12 +21,12 @@ function enableValidation(validationElements) {
 function setEventListeners(formInput, form,ButtonSelector, inactiveButtonClass, inputErrorClass, errorClass, popupErrorSelector) {
     const buttonElement = form.querySelector(ButtonSelector);
 
-    toggleButtonState(formInput, buttonElement, inactiveButtonClass);
+    checkButtonState(formInput, buttonElement, inactiveButtonClass);
 
     formInput.forEach((input) => {
         input.addEventListener('input', function() {
             checkInputValidity(formInput, inputErrorClass, errorClass, popupErrorSelector);
-            toggleButtonState(formInput, buttonElement, inactiveButtonClass);
+            checkButtonState(formInput, buttonElement, inactiveButtonClass);
         });
     });
 }
@@ -55,21 +55,30 @@ function hideInputError(inputElement, inputErrorClass, errorClass, popupErrorSel
     errorElement.classList.remove(errorClass);
 };
 
-function toggleButtonState(formInput, buttonElement, inactiveButtonClass) {
+function disableButtonState(buttonElement, inactiveButtonClass) {
+        buttonElement.classList.add(inactiveButtonClass);
+        buttonElement.setAttribute('disabled', true);
+}
+
+function enableButtonState (buttonElement, inactiveButtonClass) {
+    buttonElement.classList.remove(inactiveButtonClass);
+    buttonElement.removeAttribute('disabled');
+}
+
+function checkButtonState (inputElement, buttonElement, inactiveButtonClass) {
     let toggleElement = false;
 
-    formInput.forEach((input) => {
+    inputElement.forEach((input) => {
         if(!hasInvalidInput(input)) {
             toggleElement = true;
         }
     })
+
     if(!toggleElement) {
-        buttonElement.classList.remove(inactiveButtonClass);
-        buttonElement.removeAttribute('disabled');
+        enableButtonState(buttonElement, inactiveButtonClass)
     } 
     else {
-        buttonElement.classList.add(inactiveButtonClass)
-        buttonElement.setAttribute('disabled', true);
+        disableButtonState(buttonElement, inactiveButtonClass)
     }
 }
 
